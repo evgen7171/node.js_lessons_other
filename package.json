@@ -1,0 +1,9 @@
+{
+  "name": "node.js_lesson-1",
+  "version": "1.0.0",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "minimist": "^1.2.5"
+  },
+  "author": "Zubov Evgeniy (figaro1428@mail.ru)"
+}
