@@ -4,6 +4,9 @@ const chalk = require('chalk');
 function getParams(argv) {
     const rangeStart = argv.start || 1;
     const rangeEnd = argv.end || 20;
+    if ((argv.start && !Number.isInteger(argv.start)) ||
+        (argv.end && !Number.isInteger(argv.end)))
+        return {error: 'Некорректный ввод'}
     if (rangeEnd < rangeStart) return {error: 'Некорректный ввод'}
     return {rangeStart, rangeEnd}
 }
