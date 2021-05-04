@@ -1,0 +1,12 @@
+{
+  "name": "node.js_lesson-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Zubov Evgeniy (figaro1428@mail.ru)",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "moment": "^2.29.1"
+  }
+}
