@@ -16,7 +16,11 @@ class Timer {
 
     show() {
         const time = moment(this.time).diff(moment());
-        console.log(`${this.name} ${new Date(time)}`)
+        if(time===0){
+            // emit('stop')
+        }else {
+            console.log(`${this.name} ${new Date(time)}`)
+        }
     }
 }
 
@@ -24,13 +28,6 @@ function initTimers(...argTimers) {
     return argTimers.map(
         (argTimer, key) => new Timer(`timer${key + 1}`, argTimer)
     );
-}
-
-function initFakeTimers() {
-    const timers = [
-        moment().subtract(1, 'hours').format()
-    ];
-    return initTimers(timers);
 }
 
 const argTimers = getParams();
