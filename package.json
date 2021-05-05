@@ -1,0 +1,11 @@
+{
+  "name": "node.js_lesson-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "author": "Zubov Evgeniy (figaro1428@mail.ru)",
+  "dependencies": {
+    "lazy": "^1.0.11"
+  }
+}
